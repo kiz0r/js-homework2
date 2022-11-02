@@ -51,8 +51,8 @@ for (let num = 25; num >= 0; num--) {
 
 // Виведення від 10 до 50 (кожен раз збільшити попереднє значення на 5)
 console.log("ВІД 10 ДО 50 (КОЖЕН РАЗ +5)");
-let startNumber = 10;
-for (let numberCounter = 5; startNumber <= 50; startNumber += numberCounter) {
+const numberCounter = 5;
+for (let startNumber = 10; startNumber <= 50; startNumber += numberCounter) {
   console.log(startNumber);
 }
 
