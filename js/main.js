@@ -14,7 +14,7 @@ if (test) {
 }
 
 test = false;
-if (test != true) {
+if (!test) {
   console.log("Вірно.");
 } else {
   console.log("Невірно.");
@@ -23,14 +23,14 @@ if (test != true) {
 // Завдання на покупки
 const userPrice = Number(prompt("Введіть суму покупки"));
 let discount = 0;
-if (isFinite(userPrice)) {
-  if (userPrice >= 500 && userPrice < 800) {
+if (Number.isFinite(userPrice)) {
+  if (userPrice > 500 && userPrice < 800) {
     discount = userPrice * 0.03;
     console.log(
       "Кінцева ціна з урахуванням знижки 3% = ",
       userPrice - discount
     );
-  } else if (userPrice >= 800) {
+  } else if (userPrice > 800) {
     discount = userPrice * 0.05;
     console.log(
       "Кінцева ціна з урахуванням знижки 5% = ",
