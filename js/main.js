@@ -24,7 +24,7 @@ if (test != true) {
 const userPrice = Number(prompt("Введіть суму покупки"));
 let discount = 0;
 if (isFinite(userPrice)) {
-  if (userPrice >= 300 && userPrice < 800) {
+  if (userPrice >= 500 && userPrice < 800) {
     discount = userPrice * 0.03;
     console.log(
       "Кінцева ціна з урахуванням знижки 3% = ",
