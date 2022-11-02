@@ -13,8 +13,8 @@ if (test) {
   console.log("Невірно.");
 }
 
-test != true;
-if (test) {
+test = false;
+if (test != true) {
   console.log("Вірно.");
 } else {
   console.log("Невірно.");
